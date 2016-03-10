@@ -9,5 +9,7 @@ Enter the project directory and run the script
 npm install
 npm run test
 ```
-Then visit [http://127.0.0.1:3006/menu.html] in your browser ;-) 
+Then visit [http://127.0.0.1:3006/menu.html] in your browser for loacl.
+
+[Online demo](http://gnipbao.github.io/css3-test/menu.html) ;-)
 
