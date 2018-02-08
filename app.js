@@ -1,9 +1,16 @@
-//css3-test server
+// deps
+const serve = require('serve')
+const opn = require('open');
+const chalk = require('chalk');
+// vars
+const PORT = 3006;
+const url = `http://127.0.0.1:${PORT}/menu.html`;
+const Log = console.log;
+const server = serve(__dirname, {
+  port: PORT,
+  ignore: ['node_modules']
+});
 
-var router = require('easy-router');
+opn(url);
+Log(chalk.green(`server run at 127.0.0.1:${PORT}`));
 
-var port = 3006;
-
-router.init({debug : true}).setMap('**/*' , '**/*').listen(port);
-
-console.log("http://127.0.0.1:"+port+"/menu.html");
